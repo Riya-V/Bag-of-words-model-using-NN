@@ -126,6 +126,7 @@ scalar.fit(x_train) #use same scaler for train and test
 #scalar.fit(x_test)
 scaled_data = scalar.transform(x_train)
 # Importing PCA
+from sklearn.decomposition import PCA
 pca = PCA(n_components = 1000)
 pca.fit(scaled_data)
 x_train_pca = pca.transform(scaled_data)
