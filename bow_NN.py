@@ -164,3 +164,4 @@ def main():
 import random
 if __name__=="__main__":
     main()
+ #accuracy after training for 10 epochs 69.06848425835767
