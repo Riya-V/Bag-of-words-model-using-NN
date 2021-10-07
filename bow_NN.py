@@ -164,7 +164,7 @@ def main():
 import random
 if __name__=="__main__":
     main()
-#1)accuracy after training for 10 epochs-> <b>69.06848425835767<b>
+#1)accuracy after training for 10 epochs-> **69.06848425835767**
 
 
 #2)accuracy by changing loss function from cross entropy to categorical cross entropy(CCE) and keeping all other same-><b>69.68516715352159<b<
