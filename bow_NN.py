@@ -165,8 +165,13 @@ import random
 if __name__=="__main__":
     main()
 #1)accuracy after training for 10 epochs-> 69.06848425835767
-#2)accuracy by changing loss function to categorical cross entropy(CCE) and keeping all other same->69.68516715352159
+#2)accuracy by changing loss function from cross entropy to categorical cross entropy(CCE) and keeping all other same->69.68516715352159
 # cce_loss = torch.nn.CrossEntropyLoss()
 #loss = cce_loss( output,y_onehot)
 #loss = np.sum(-y_onehot * np.log(output) - (1 - y_onehot) * np.log(1 - output)) [line 169,170 dooes the work which is done by line 171]
+#3)By repacing sigmoid activation function with softmax and changing loss function from crossentropy to CCE(categorical cross entropy) from above code
+#accucarcy was decreased to 16.58552418046089%
+#import torch.nn as nn
+#softmax = nn.Softmax(dim=-1)
+#y = softmax(l1)
         
